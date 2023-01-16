@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morumbi Tour</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:wght@750&display=swap" rel="stylesheet">
+    <script src="/app.js" defer></script>
+
+</head>
+<body>
+    <header id="descricaoEvento">
+        <div id="aviso">
+            <h2>Morumbi Tour</h2>
+            <p class="sobreEvento">Conheça de perto o estádio do SPFC</p>
+            <p>Data do evento:</p>
+            <p class="dataEvento">Domingo, 8 de Janeiro de 2023, a partir das 13h</p>
+        </div>
+        <div id="formularioInscricao">
+            <p>Preencha o formulário para receber os detalhes do evento</p>
+            <form>
+                <div class="grupoFormulario">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome">
+                </div>
+                <div class="grupoFormulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu melhor E-mail">
+                </div>
+                <div class="grupoFormulario">
+                    <label for="phone">Telefone</label>
+                    <input type="phone" name="phone" placeholder="Número de WhatsApp">
+                </div>
+                <div><input type="submit" class="btn" value="Quero me inscrever"></div>
+            </form>
+        </div>
+    </header>
+    <section id="atracoes">
+        <h2>O que você vai conhecer:</h2>
+        <div class="atracoes">
+            <div class="atracao">
+                <div id="atracao-1" class="atracao-img"></div>
+                <p>Caminho dos ídolos</p>
+            </div>
+            <div class="atracao">
+                <div id="atracao-2" class="atracao-img"></div>
+                <p>Sala de troféus</p>
+            </div>
+            <div class="atracao">
+                <div id="atracao-3" class="atracao-img"></div>
+                <p>Vestiário</p>
+            </div>
+        </div>
+    </section>
+    <section id="atracoes-2">
+        <div class="atracoes-2">
+            <div class="atracao-2">
+                <div id="atracao-2-1" class="atracao-2-img"></div>
+                <p>Escudo</p>
+            </div>
+            <div class="atracao-2">
+                <div id="atracao-2-2" class="atracao-2-img"></div>
+                <p>Gramado</p>
+            </div>
+            <div class="atracao-2">
+                <div id="atracao-2-3" class="atracao-2-img"></div>
+                <p>Túnel</p>
+            </div>
+        </div>
+    </section>
+    <section id="localizacao">
+        <div id="endereco">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div id="detalhesEndereco">
+                <p>Praça Roberto Gomes Pedrosa, 1</p>
+                <p> Morumbi, São Paulo - SP</p>
+                <p>Abertura: 13h</p>
+            </div>
+        </div>
+        <div id="sobreLocal">
+            <h3>Estádio do maior campeão internacional brasileiro!</h3>
+        </div>
+    </section>
+    <section id="cta">
+        <h3>Gostou? Então se inscreva:</h3>
+        <!--botao inscreva-se-->
+        <button class="btn" id="btn-inscrever" data-anime="btn-inscrver-mobile">Inscrever</button>
+        <!--botao inscreva-se mobile-->
+        <button class="btn" id="btn-inscrever-2" data-anime="btn-inscrver-mobile">Inscrever</button>
+    </section>
+    <footer id="footer">
+        <h3>Morumbi Tour</h3>
+        <h4>ISAC BRITO</h4>
+        <p><span>Entre em contato: </span>oi@morumbitour.com</p>
+        <p><span>Ou pelo telefone: </span>(35) 99999-9999</p>
+    </footer>
+</body>
+</html>

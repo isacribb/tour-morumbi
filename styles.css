@@ -1,0 +1,373 @@
+:root {
+    --red: #e3161d;
+    --black: #000000;
+    --white: rgb(255, 255, 255);
+    --red2: #ff0000;
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESCRIÇÃO DO TOUR */
+#descricaoEvento {
+    background: linear-gradient(rgba(8, 8, 8, 0.8), rgba(8, 8, 8, 0.8)),
+        url(img/morumbi.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+}
+
+#aviso h2,
+#aviso .dataEvento {
+    color: var(--red);
+    font-size: 1.5em;
+}
+
+#aviso h2 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+#aviso .sobreEvento {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+#aviso p {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+
+/* FORMULARIO */ 
+#formularioInscricao {
+    background-color: var(--black);
+    padding: 2em;
+    max-width: 22%;
+}
+
+.hidden{
+    background-color: #777777;
+}
+
+#formularioInscricao p {
+    font-size: 1.5em;
+    color: var(--white);
+    margin-bottom: 1em;
+}
+
+.grupoFormulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.grupoFormulario label {
+    color: var(--red2);
+    margin-bottom: .3em;
+}
+
+.grupoFormulario input{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+/* BOTAO INSCREVA-SE FORMULARIO */
+.btn {
+    background-color: var(--red);
+    color: var(--white);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-top: 1em;
+
+}
+
+.btn:hover {
+    opacity: 10;
+}
+
+/* ATRAÇÕES */
+#atracoes h2 {
+    background-color: var(--white);
+    text-align: center;
+    padding: 1em;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 2em;
+}
+
+.atracoes,
+.atracoes-2 {
+    display: flex;
+    justify-content: space-around;
+    padding:2em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.atracao p,
+.atracao-2 p{
+    font-size: 1.7em;
+}
+
+.atracao,
+.atracao-2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--red2)
+}
+
+.atracao .atracao-img,
+.atracao-2 .atracao-2-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* IMAGENS DAS ATRACOES */
+#atracao-1,
+.atracao-2-1 {
+    background-image: url(img/caminhoDosIdolos.jpg);
+}
+
+#atracao-2,
+.atracao-2-2 {
+    background-image: url(img/salaDeTrofeus.jpg);
+}
+
+#atracao-3,
+.atracao-2-3 {
+    background-image: url(img/vestiario.jpg);
+}
+
+#atracao-2-1 {
+    background-image: url(img/escudo.jpg);
+}
+
+#atracao-2-2 {
+    background-image: url(img/gramado.jpg);
+}
+
+#atracao-2-3 {
+    background-image: url(img/tunel.jpg);
+}
+
+
+
+/* LOCAL */
+#localizacao {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(img/morumbi.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    margin-bottom: 3em;
+}
+
+#endereco,
+#sobreLocal {
+    max-width: 30%;
+}
+
+#endereco {
+    display: flex;
+    align-items: center;
+}
+
+#endereco i {
+    color: var(--red);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#detalhesEndereco {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#sobreLocal h3 {
+    color: var(--white);
+    font-size: 2.5em;
+    margin-bottom: .8em;
+    text-transform: uppercase;
+}
+
+#sobreLocal p {
+    line-height: 1.5em;
+    font-size: 2em;
+}
+
+/* BOTAO INSCREVA-SE*/
+#cta{
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(img/vestiario.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+#cta h3{
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#btn-inscrever{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#btn-inscrever-2{
+    display: none;
+}
+
+/* FOOTER */
+#footer{
+    text-align: center;
+    color: var(--black);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3{
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer h4{
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+/* MOBILE */
+@media (max-width:455px){
+    #descricaoEvento{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #aviso{
+        padding: 2em;
+    }
+
+    #aviso h2{
+        margin-bottom: .5em;
+    }
+
+    #formularioInscricao{
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    .atracoes,
+    .atracoes-2{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .atracao,
+    .atracao-2{
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    #localizacao{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #endereco{
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #endereco i{
+        margin: .3em 0;
+    }
+
+    #sobreLocal{
+        order: 1;
+        max-width: 100%;
+    }
+
+    #sobreLocal h3{
+        margin-bottom: 0;
+    }
+
+    #sobreLocal p{
+        display: none;
+    }
+
+    
+      /* BOTAO INSCREVA-SE */
+      
+      #cta h3{
+        text-align: center;
+      }
+
+      #btn-inscrever{
+        display: none;
+      }
+
+      #btn-inscrever-2{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+
+    }
+    
+@keyframes animacao{
+    0%{
+        background-color: var(--black);
+    }
+    50%{
+        background-color: #777777;
+    }
+    100%{
+        background-color: var(--black);
+    }
+    
+}
